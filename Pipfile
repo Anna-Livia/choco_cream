@@ -1,0 +1,6 @@
+[packages]
+django= "*"
+python-dotenv= "*"
+
+[requires]
+python_version = "3.7"
