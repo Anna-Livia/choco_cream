@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>"Hello, world. You're at the polls index. and this is Anna-Livia")</title>
+  <form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Save">
+  </form>
+
+  <h2> Dépenses </h2>
+  <ul>
+    {% for transaction in transactions %}
+      <li>{{transaction.amount}}</li>
+    {% endfor %}
+  </ul>
+  <h3>{{ transactions.count }}</h3>
+
+
+</head>
+<body>
+
+</body>
+</html>
